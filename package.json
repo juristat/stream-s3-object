@@ -1,6 +1,6 @@
 {
   "name": "stream-s3-object",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Stream an S3 getObject call with relevant metadata",
   "main": "index.js",
   "engines": {
