@@ -1,0 +1,36 @@
+{
+  "name": "stream-s3-object",
+  "version": "1.0.0",
+  "description": "Stream an S3 getObject call with relevant metadata",
+  "main": "index.js",
+  "engines": {
+    "node": "^6"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "prettier --write \"./**/*.js\" \".eslintrc.json\"",
+    "test": "yarn lint && yarn test:only",
+    "test:only": "jest"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juristat/stream-s3-object.git"
+  },
+  "author": "Ben Chociej <ben.chociej@juristat.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juristat/stream-s3-object/issues"
+  },
+  "homepage": "https://github.com/juristat/stream-s3-object#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1"
+  }
+}
