@@ -13,8 +13,8 @@ const { getHeader, headers, stream } = await streamS3Object(getObjectRequest)
 
 ## Returned properties
 
-* `getHeader(name: string): string`
-  * Get the string value of the specified header name, with case-insensitive matching
+* `getHeader(name: string): string?`
+  * Get the string value of the specified header name (or `undefined`), with case-insensitive matching
 * `headers: { [name: string]: string }`
   * The exact headers object returned from the AWS SDK
 * `stream: stream.Readable`
