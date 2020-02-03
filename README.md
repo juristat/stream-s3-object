@@ -13,6 +13,8 @@ const { getHeader, headers, stream } = await streamS3Object(getObjectRequest)
 
 ## Returned properties
 
+The function returns an object containing the following properties asynchronously (i.e. as a Promise):
+
 * `getHeader(name: string): string?`
   * Get the string value of the specified header name (or `undefined`), with case-insensitive matching
 * `headers: { [name: string]: string }`
