@@ -23,7 +23,7 @@ const { getHeader, headers, stream } = await streamS3Object(getObjectRequest)
 
 ## Errors
 
-The returned Promise will be rejected with the error value from any `httpError` event that is raised on the `getObject()` request.
+The `streamS3Object()` call will throw a `TypeError` synchronously if the input doesn't appear to be a request object from the s3 `getObject()` method. The returned Promise will be rejected with the error value from any `httpError` event that is raised on the `getObject()` request.
 
 ## See Also
 
